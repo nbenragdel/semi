@@ -12,12 +12,15 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 class ParticipantController extends Controller
 {
 	/**
-	 * @Route("/index")
+	 * @Route("/index", name="participant")
 	 * @Template()
 	 */
 	public function indexAction()
 	{
-		return array();
+		$lesParticipant = $this->getDoctrine()
+		->getRepository("SioSemiBundle:Participant")
+		->findAll();
+		return array('lesParticipant' => $lesParticipant);
 	}
 	
 }

@@ -1,0 +1,126 @@
+@CHARSET "UTF-8";
+
+.cadreNbSeancesInscr {
+        width: 470px;
+        padding: 10px;
+        background: #ccc;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;      
+}
+
+.cadreBlock {        
+        padding: 10px;
+        background: #ccc;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;      
+}
+
+
+.nomprenom {
+ position: relative;
+  top: 0em;
+  right: 20%;
+  width: 300px;
+  padding: 10px;
+  background-color: #ccc;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/*
+.event .category-item{
+  display:-moz-inline-stack;
+  display:inline-block;    
+  line-height:15px;
+  padding:0 0 5px 25px;
+  background:url(../images/event_icons.png) no-repeat 0 0;
+  font-size:12px
+ }
+    
+ .event .category-item.atelier{
+   background-position:0 -20px
+  }
+ */
+ 
+ table.dataTable tr.odd_row_atelier {
+  background-color: #eae3e3;
+}
+   
+ table.dataTable tr.even_row_atelier { 
+  background-color: #f2f5f2; 
+}
+
+.atelier {
+  padding:0 0 5px 25px; 
+  background-color: #f2f5f2;
+  background:url(../images/atelier.png) no-repeat 0 0; 
+}
+
+div#navigation  {
+  float:center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45em;  
+}   
+ 
+ div#accueil {
+    clear: left;    
+    margin-left: auto;
+    margin-right: auto;
+    width: 35em;
+}
+
+div#titre  {
+  clear:left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50em;
+}   
+         
+nav ul {
+padding:0;
+margin:0;
+list-style-type:none;
+}
+nav ul li
+{
+margin-left:2px;
+float:left; /*pour IE*/
+}
+nav ul li a
+{
+display:block;
+float:center;/*left;*/   
+
+background-color:#f8f8f8;
+color:black;
+text-decoration:none;
+text-align:center;
+font-size: 20px;
+padding:5px;
+border-width:2px;
+border-style:solid;
+border-color:#DCDCDC #696969 #696969 #DCDCDC;  /*pour avoir un effet "outset" avec IE*/
+}
+nav ul li a:hover
+{
+background-color:#E3E3E3;
+border-color: #696969 #DCDCDC #DCDCDC #696969;
+}
+
+header { 
+ text-align:right;
+ display:block;
+ float: right;
+ margin-top: 0.45em;
+ font-size: 0.9em; 
+ padding:5px;
+ border-width:2px;
+ border-style:solid;
+ border-color:#DCDCDC #696969 #696969 #DCDCDC;  /*pour avoir un effet "outset" avec IE*/
+}   
+
+

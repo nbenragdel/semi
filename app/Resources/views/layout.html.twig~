@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles/jquery-ui.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/dataTable.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./styles/jquery.gritter.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/formlogin.css" />
+    
+     <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>     
+     <script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+     <script type="text/javascript" src="js/jquery.gritter.min.js"></script>
+     <script type="text/javascript" src="js/jquery_002.js"></script>
+     <title>E-Seminaire : gestion des inscriptions</title>
+  </head>
+  <body>
+  
+  <header>  </header>
+  
+  <div id='navigation'>  
+  <nav>
+	<ul>
+ 
+    		
+		<li><a href="login">Login</a></li>
+				<li><a href="apropos">A propos</a></li>
+  </ul>
+  </nav>	
+</div>
+<br/>
+<script type="text/javascript">
+
+</script>
+    <br/>
+      <div id="titre">       
+        <!-- img src="./images/seminairelogo.jpg" id="logoseminaire" alt="seminaire" title="seminaire" / -->       
+        <h3>Séminaire : « Les Journées du management »</h3>
+              </div>
+<script type="text/javascript"> 
+function verifier() 
+{ 
+    var numeroErreur=0; 
+    var ok=true; 
+    var tabErreur=new Array(); 
+    var regex = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    var i; 
+    
+    if(document.getElementById("email").value.length==0) 
+    { 
+        ok=false; 
+        tabErreur[numeroErreur]="Veuillez saisir le champ mail svp"; 
+        numeroErreur++; 
+    }
+    
+    else if(regex.test(document.getElementById("email").value) == false)
+       {
+        ok=false;
+        tabErreur[numeroErreur]="L'adresse mail est invalide"; 
+        numeroErreur++;  
+       }
+    if(document.getElementById("cle").value.length==0) 
+    { 
+        ok=false;
+        tabErreur[numeroErreur]="Veuillez saisir la clé du séminaire svp"; 
+        numeroErreur++; 
+    } 
+    
+    if(!ok) 
+    { 
+        var libelleErreur=""; 
+        for(i=0; i<numeroErreur; i++) 
+            libelleErreur+="\n*"+tabErreur[i]; 
+        window.alert(libelleErreur); 
+ } 
+return ok;
+}
+</script>
+ {% block content %}
+
+
+{% endblock %} 
+    
+  </body>
+</html>

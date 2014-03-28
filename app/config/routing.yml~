@@ -1,0 +1,5 @@
+sio_semi:
+    resource: "@SioSemiBundle/Controller/DefaultController.php"
+    type:     annotation
+    prefix:   /
+

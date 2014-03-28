@@ -1,5 +1,0 @@
-sio_semi:
-    resource: "@SioSemiBundle/Controller/"
-    type:     annotation
-    prefix:   /
-

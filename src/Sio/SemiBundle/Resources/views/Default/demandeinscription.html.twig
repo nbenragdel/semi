@@ -1,0 +1,28 @@
+{% extends "SioSemiBundle::layout.html.twig" %}
+{% block content %}
+
+ 
+<div class="box inscription">
+<fieldset class="boxBody"> 
+<legend>{{ legend }}</legend>
+
+  {{ form_start(formulaire) }}
+             
+                 
+                {{ form_errors(formulaire) }}
+
+                {{ form_row(formulaire.nom) }}
+                {{ form_row(formulaire.prenom) }}
+                {{ form_row(formulaire.mail) }}
+           
+                {{ form_row(formulaire.resadministrative) }}
+                {{ form_row(formulaire.resfamilliale) }}
+                {{ form_label(formulaire.role) }}
+                {{ form_widget(formulaire.role) }}
+           
+            <button type="submit" class="btn btn-inverse">Valider</button>
+           
+        {{ form_end(formulaire) }}
+</fieldset>
+</div>
+{% endblock %}
